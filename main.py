@@ -23,4 +23,8 @@ async def on_ready():
     print(f'Logged in as {client.user} (ID: {client.user.id})')
     print('------')
 
+@client.command()
+async def ping(ctx):
+    await ctx.send("pong!")
+
 client.run(token)
